@@ -21,9 +21,9 @@ public class Cache {
 
   public void addService(Service service) {
     if (service.getName() == null || service.getName() == "") {
-      throw new IllegalArgumentException();
+      throw new IllegalArgumentException("service name must not empty");
     }
-    if (getService(service.getName()) != null) {
+    if (getService(service.getName()) == null) {
       services.add(service);
     }
   }
