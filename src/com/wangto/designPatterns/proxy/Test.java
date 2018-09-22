@@ -6,5 +6,5 @@ public class Test {
 		Shape shape = new ConcreteShapeProxy();
 		shape.draw();
 	}
-
+	
 }

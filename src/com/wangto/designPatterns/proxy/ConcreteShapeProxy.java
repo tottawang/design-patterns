@@ -9,7 +9,6 @@ public class ConcreteShapeProxy implements Shape {
 		if (concreteShape == null) {
 			concreteShape = new ConcreteShape();
 		}
-		
 		concreteShape.draw();
 	}
 
